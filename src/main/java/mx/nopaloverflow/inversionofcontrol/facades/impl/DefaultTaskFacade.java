@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 public class DefaultTaskFacade implements TaskFacade {
     private static final Logger LOG = Logger.getLogger(DefaultTaskFacade.class.getName());
 
-    private TaskService taskService;
+    private final TaskService taskService;
 
     public DefaultTaskFacade(final TaskService taskService) {
         this.taskService = taskService;
